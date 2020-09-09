@@ -3,12 +3,13 @@ Java integration for the Parcelport API
 
 # Usage example
 
+		// Connect to the parcelport API
 		ParcelPortClient client = new ParcelPortClient("username", "password");
 		client.connect("https://apitest.parcelport.co.nz");
 		
+		// A list for warning messages (hopefully empty) about missing mandatory parameters in the pickup address.
 		List<String> pickupAddressWarningMessages = new ArrayList<String>();
 		
-		// A list for warning messages (hopefully empty) about missing mandatory parameters in the pickup address.
 		Address pickupAddress = new Address.Builder()
 				.body("20 South Street")
 				.number("20")
