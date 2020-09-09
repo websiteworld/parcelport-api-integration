@@ -18,7 +18,7 @@ Java integration for the Parcelport API
 				.country("NZ").postcode("5028")
 				.build(pickupAddressWarningMessages);
 		
-		// A list for wanring messages warning about missing mandatory parameters in the delivery address.
+		// A list for warning messages warning about missing mandatory parameters in the delivery address.
 		List<String> deliveryAddressWarningMessages = new ArrayList<String>();
 		
 		Address deliveryAddress = new Address.Builder()
