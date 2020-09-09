@@ -8,7 +8,7 @@ Java integration for the Parcelport API
 		
 		List<String> pickupAddressWarningMessages = new ArrayList<String>();
 		
-		// A list for wanring messages about missing mandatory parameters in the pickup address.
+		// A list for warning messages about missing mandatory parameters in the pickup address.
 		Address pickupAddress = new Address.Builder()
 				.body("20 South Street")
 				.number("20")
