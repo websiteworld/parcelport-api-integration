@@ -3,7 +3,7 @@ Java integration for the Parcelport API
 
 # Usage example
 
-		ParcelPortClient client = new ParcelPortClient("pptest", "1234abcd");
+		ParcelPortClient client = new ParcelPortClient("username", "password");
 		client.connect("https://apitest.parcelport.co.nz");
 		
 		List<String> pickupAddressWarningMessages = new ArrayList<String>();
