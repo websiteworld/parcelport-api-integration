@@ -8,7 +8,7 @@ Java integration for the Parcelport API
 		
 		List<String> pickupAddressWarningMessages = new ArrayList<String>();
 		
-		// A list for warning messages about missing mandatory parameters in the pickup address.
+		// A list for warning messages (hopefully empty) about missing mandatory parameters in the pickup address.
 		Address pickupAddress = new Address.Builder()
 				.body("20 South Street")
 				.number("20")
@@ -18,7 +18,7 @@ Java integration for the Parcelport API
 				.country("NZ").postcode("5028")
 				.build(pickupAddressWarningMessages);
 		
-		// A list for warning messages warning about missing mandatory parameters in the delivery address.
+		// A list for warning messages (hopefully empty) warning about missing mandatory parameters in the delivery address.
 		List<String> deliveryAddressWarningMessages = new ArrayList<String>();
 		
 		Address deliveryAddress = new Address.Builder()
@@ -30,7 +30,7 @@ Java integration for the Parcelport API
 				.country("NZ").postcode("1021")
 				.build(deliveryAddressWarningMessages);
 		
-		// A list for warning messages warning about missing mandatory parameters in the parcel details.
+		// A list for warning messages (hopefully empty) warning about missing mandatory parameters in the parcel details.
 		List<String> parcelWarningMessages = new ArrayList<String>();
 		
 		Parcel parcel = new Parcel.Builder()
